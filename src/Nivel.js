@@ -6,13 +6,17 @@ const Nivel = () =>{
         <div className='backgroundN'>
             <div>   
                 <p className='avisoN'>Se você clicar um qualquer lugar desse quadrado irá iniciar o quiz no <b>Nível Impossível</b>. Caso esteja preparado só clique e prepara-se!</p>
-            </div>
-            
+                  </div>
             <div className='nivel'>
                 <div className='facilN'>
+                  
+
+              
+                  
+                  
                     <div>
                         <h2>Nível Fácil</h2>
-                        <p>Você está preparado?</p><br/>
+                        <font> <p>Você está preparado?</p><br/>
                         <p>Você enfrentará perguntas do tipo:</p>
                         <ul>
                             <li></li>
@@ -22,13 +26,14 @@ const Nivel = () =>{
                             <li></li>
                             <li>entre outras...</li>
                         </ul>
-                    
+                        </font>
                     </div>
                 </div>
 
                 <div className='medioN'>
-                    <div>
+                    <div>   
                         <h2>Nível Médio</h2>
+                    <font>
                         <p>Você está preparado?</p><br/>
                         <p>Você enfrentará perguntas do tipo:</p>
                         <ul>
@@ -39,13 +44,14 @@ const Nivel = () =>{
                             <li></li>
                             <li>entre outras...</li>
                         </ul>
-                       
+                    </font> 
                     </div>
                 </div>
 
                 <div className='dificilN'>
-                    <div>
+                    <div>  
                         <h2>Nível Difícil</h2>
+                    <font>
                         <p>Você está preparado?</p><br/>
                         <p>Você enfrentará perguntas do tipo:</p>
                         <ul>
@@ -56,13 +62,15 @@ const Nivel = () =>{
                             <li></li>
                             <li>entre outras...</li>
                         </ul>
-                       
+                     </font>  
                     </div>
                 </div>
 
                 <div className='impossivelN'>
                     <div>
+                     
                         <h2>Nível Impossível</h2>
+                     <font>
                         <p>Você está preparado?</p><br/>
                         <p>Você enfrentará perguntas do tipo:</p>
                         <ul>
@@ -73,7 +81,7 @@ const Nivel = () =>{
                             <li></li>
                             <li>entre outras...</li>
                         </ul>
-                       
+                      </font> 
                     </div>
                 </div>
             </div>

@@ -1,14 +1,12 @@
-body{
-    background-image: url("https://i.imgur.com/4CAFmGP.jpg");
-}
-
 .backgroundN p{
     margin-top: 5%;
     
 }
 
 .nivel{
+    
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 95%;
     margin: 0 auto;
@@ -26,28 +24,38 @@ body{
     margin: 0 auto;
 }
 
+
+font{
+
+font-size: 22px;
+
+
+}
+
+
 /* Facil */
 .facilN{
     margin-top:3%;
     font-size:23px ;
     
-    width: 430px;
-    height: 500px;
+    width: 22%;
     background: #00131aa2;
     
     border: 2px greenyellow solid;
     border-radius: 15px;
+    
 
 }
 
 .facilN div{
-    width: 70%;
+    width: 65%;
     text-align: justify;
     margin: 0 auto;
 }
 
 .facilN h2{
     color: greenyellow;
+    text-align: center;
 }
 
 .facilN b{
@@ -62,25 +70,26 @@ body{
 .medioN{
     margin-top:3%;
     font-size:23px;
-    width: 430px;
-    height: 500px;
+    width: 22%;
     background: #00131aa2;
     border: 2px yellow solid;
     border-radius: 15px;
 }
 
 .medioN div{
-    width: 70%;
+    width: 65%;
     text-align: justify;
     margin: 0 auto;
 }
 
 .medioN h2{
     color:#FFD813;
+    text-align: center;
 }
 
 .medioN b{
     color: #FFD813;
+    text-align: center;
 }
 
 .medioN:hover{
@@ -91,21 +100,21 @@ body{
 .dificilN{
     margin-top:3%;
     font-size:23px;
-    width: 430px;
-    height: 500px;
+    width: 22%;
     background: #00131aa2;
     border: 2px red solid;
     border-radius: 15px;
 }
 
 .dificilN div{
-    width: 70%;
+    width: 65%;
     text-align: justify;
     margin: 0 auto;
 }
 
 .dificilN h2{
     color: red;
+    text-align: center;
 }
 
 .dificilN b{
@@ -120,21 +129,21 @@ body{
 .impossivelN{
     margin-top:3%;
     font-size:23px;
-    width: 430px;
-    height: 500px;
+    width: 22%;
     background: #00131aa2;
     border: 2px #86128C solid;
     border-radius: 15px;
 }
 
 .impossivelN div{
-    width: 70%;
+    width: 65%;
     text-align: justify;
     margin: 0 auto;
 }
 
 .impossivelN h2{
     color: #86128C;
+    text-align: center;
 }
 
 .impossivelN b{

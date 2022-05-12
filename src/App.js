@@ -1,3 +1,4 @@
+import Impossivel from './Impossivel';
 import Nivel from './Nivel';
 import React from 'react';
 
@@ -6,7 +7,7 @@ function App() {
 
     return (
         <div>
-            
+            <Nivel/>
         </div>
     );
 }
