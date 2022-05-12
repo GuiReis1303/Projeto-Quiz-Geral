@@ -1,0 +1,146 @@
+body{
+    background-image: url("https://i.imgur.com/4CAFmGP.jpg");
+}
+
+.backgroundN p{
+    margin-top: 5%;
+    
+}
+
+.nivel{
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 10px;
+    
+}
+
+.avisoN{
+    border: 2px #C0E4FF solid;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-top: 10%;
+    background-color: #467599 ; opacity: 90%;
+    width:70%;
+    margin: 0 auto;
+}
+
+/* Facil */
+.facilN{
+    margin-top:3%;
+    font-size:23px ;
+    
+    width: 430px;
+    height: 500px;
+    background: #00131aa2;
+    
+    border: 2px greenyellow solid;
+    border-radius: 15px;
+
+}
+
+.facilN div{
+    width: 70%;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.facilN h2{
+    color: greenyellow;
+}
+
+.facilN b{
+    color: greenyellow;
+}
+
+.facilN:hover{
+    box-shadow: 0px 2px 10px rgb(187, 216, 20);
+}
+
+/* Medio */
+.medioN{
+    margin-top:3%;
+    font-size:23px;
+    width: 430px;
+    height: 500px;
+    background: #00131aa2;
+    border: 2px yellow solid;
+    border-radius: 15px;
+}
+
+.medioN div{
+    width: 70%;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.medioN h2{
+    color:#FFD813;
+}
+
+.medioN b{
+    color: #FFD813;
+}
+
+.medioN:hover{
+    box-shadow: 0px 2px 10px rgb(210, 230, 37);
+}
+
+/* Difícil */
+.dificilN{
+    margin-top:3%;
+    font-size:23px;
+    width: 430px;
+    height: 500px;
+    background: #00131aa2;
+    border: 2px red solid;
+    border-radius: 15px;
+}
+
+.dificilN div{
+    width: 70%;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.dificilN h2{
+    color: red;
+}
+
+.dificilN b{
+    color: red;
+}
+
+.dificilN:hover{
+    box-shadow: 0px 2px 10px rgb(148, 3, 3);
+}
+
+/* Impossível */
+.impossivelN{
+    margin-top:3%;
+    font-size:23px;
+    width: 430px;
+    height: 500px;
+    background: #00131aa2;
+    border: 2px #86128C solid;
+    border-radius: 15px;
+}
+
+.impossivelN div{
+    width: 70%;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.impossivelN h2{
+    color: #86128C;
+}
+
+.impossivelN b{
+    color: #86128C;
+}
+
+.impossivelN:hover{
+    box-shadow: 0px 2px 10px rgb(102, 0, 70);
+}
