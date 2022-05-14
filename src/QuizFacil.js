@@ -66,24 +66,18 @@ const QuizFacil = ( props ) =>
     ];
 
     const verificaResposta = (i) => 
-    {
+    {   
         const resposta_correta = perguntas[etapa].correta;
         if( resposta_correta == i )
         {
             alteraPontos( pontos + 3);
-            require('./Acerto.css');
-        } else{
-            require('./Erro.css');
         }
-
-        setTimeout(() => {
-            if( etapa + 1 < perguntas.length ){
-                alteraEtapa( etapa + 1);
-            }
-            else{
-                alteraTela( <Final alteraTela={alteraTela}/>)
-            }
-        }, 2000);
+        
+        if( etapa + 1 < perguntas.length ){
+            alteraEtapa( etapa + 1);
+        } else{
+            alteraTela( <Final alteraTela={alteraTela}/>)
+        }
     }
 
     return ( 
@@ -101,7 +95,7 @@ const QuizFacil = ( props ) =>
                     <font>
                         {
                             perguntas[ etapa ].respostas.map( ( r, i )  => {
-                                return <div className="resposta" onClick={ () => verificaResposta(i) }> { r } </div>
+                                return <div id={etapa} className={"resposta"} onClick={ () => verificaResposta(i) }> { r } </div>
                             })   
                         }
                     </font>
