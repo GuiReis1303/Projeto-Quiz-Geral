@@ -1,0 +1,31 @@
+.quiz{
+    margin: 0 auto;
+    width: 40%;
+    margin-top: 10px;
+    background: #00131aa2;
+    border: 2px #FFF solid;
+    border-radius: 15px;
+}
+
+.quiz img{
+    margin: 10px 10px 5px 10px;
+}
+
+.quizresposta{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.resposta{
+    border: 2px #FFF solid;
+    border-radius: 15px;
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+.resposta:hover{
+    border: 2px greenyellow solid;
+}

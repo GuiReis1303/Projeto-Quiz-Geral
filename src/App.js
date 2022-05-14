@@ -1,13 +1,18 @@
-import Impossivel from './Impossivel';
+import { useState } from 'react';
 import Nivel from './Nivel';
-import React from 'react';
 
 function App() {
     require('./App.css');
 
+    const [tela, alteraTela] = useState(null)
+
+    if(tela == null){
+        alteraTela(<Nivel alteraTela={alteraTela}/>);
+    }
+
     return (
         <div>
-            <Nivel/>
+            {tela}
         </div>
     );
 }

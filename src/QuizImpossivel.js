@@ -1,0 +1,113 @@
+import React, {useState} from "react";
+import Final from "./Final";
+
+const QuizImpossivel = ( props ) => 
+{
+    require('./Quiz.css');
+
+    const alteraTela = props.alteraTela
+
+    const [ etapa, alteraEtapa ] = useState ( 0 );
+
+    const [ pontos, alteraPontos ] = useState ( 0 );
+
+    const perguntas = 
+    [
+        {
+            pergunta: "Na temporada 2015/16, o Leicester se tornou campeão da Premier League de forma surpreendente. Quantos gols o artilheiro Vardy marcou nesta competição?",
+            respostas: ["24", "21", "27", "15"],
+            correta: 0
+        },
+        {
+            pergunta: "Qual a nacionalidade do goleiro Handanovic?",
+            respostas: ["Croácia", "Eslovénia", "Eslováquia", "Ucrania"],
+            correta: 1
+        },
+        {
+            pergunta: "O segundo maior artilheiro da história do Real Madrid é o:",
+            respostas: ["Benzema", "Di Stefano", "Cristiano Ronaldo", "Raul"],
+            correta: 3
+        },
+        {
+            pergunta: "Com o apelido ilustre de (Adriano Michael Jackson) por qual equipe o atacante NÃO atuou?",
+            respostas: ["Fluminense", "Ceará", "Santos", "Bahia"],
+            correta: 2
+        },
+        {
+            pergunta: "Quantos títulos conquistou na carreira o jogador Daniel Alves?",
+            respostas: ["42", "43", "44", "45"],
+            correta: 1
+        },
+        {
+            pergunta: "Paul Pogba possui um irmão que também é jogador profissional; Qual o nome dele?",
+            respostas: ["Florentin Pogba", "Mathias Pogba", "Traore Pogba", "Florentin Paul Pogba"],
+            correta: 0
+        },
+        {
+            pergunta: "Quais seleções estão empatadas com 3 vices em copa do mundo?",
+            respostas: ["Argentina, Holanda e Alemanha", "Holanda, Brasil e Itália", "Holanda, Alemanha e Itália", "Holanda, Alemnha e Argentina"],
+            correta: 0
+        },
+        {
+            pergunta: "Em qual time europeu o Zico brasileiro jogou?",
+            respostas: ["Fiorentina", "Roma", "Uninese", "Barcelona"],
+            correta: 2
+        },
+        {
+            pergunta: "A França já sediou uma copa do mundo de futebol?",
+            respostas: ["Sim, uma vez", "Sim, duas vezes", "Sim, três vezes", "Nenhuma vez"],
+            correta: 1
+        },
+        {
+            pergunta: "Qual jogador brasileiro foi apelidado de (A Alegria do Povo)?",
+            respostas: ["Pepe", "Coutinho", "Neymar", "Garrincha"],
+            correta: 3
+        },
+    ];
+
+    const verificaResposta = (i) => 
+    {
+        const resposta_correta = perguntas[etapa].correta;
+        if( resposta_correta == i )
+        {
+            alteraPontos( pontos + 5);
+        }
+
+
+        if( etapa + 1 < perguntas.length )
+        {
+            alteraEtapa( etapa + 1);
+        }
+        else
+        {
+            alteraTela( <Final alteraTela={alteraTela}/>)
+        }
+
+    }
+
+    return ( 
+        <div className="quiz">
+            <div>
+                <img src={require("./Impossivel/"+etapa+".png")}/>
+            </div>
+
+            <div>
+                <div>
+                    <h1> { perguntas[ etapa ].pergunta } </h1>
+                </div>
+
+                <div className="quizresposta">
+                    <font>
+                        {
+                            perguntas[ etapa ].respostas.map( ( r, i )  => {
+                                return <div className="resposta" onClick={ () => verificaResposta(i) }> { r } </div>
+                            })   
+                        }
+                    </font>
+                </div>
+            </div>
+        </div>
+     );
+}
+ 
+export default QuizImpossivel;
