@@ -80,7 +80,7 @@ const QuizImpossivel = ( props ) =>
         }
         else
         {
-            alteraTela( <Final alteraTela={alteraTela}/>)
+            alteraTela( <Final pontos={pontos} alteraTela={alteraTela}/>)
         }
 
     }

@@ -76,7 +76,7 @@ const QuizFacil = ( props ) =>
         if( etapa + 1 < perguntas.length ){
             alteraEtapa( etapa + 1);
         } else{
-            alteraTela( <Final alteraTela={alteraTela}/>)
+            alteraTela( <Final pontos={pontos} alteraTela={alteraTela}/>)
         }
     }
 
