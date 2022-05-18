@@ -1,3 +1,5 @@
+
+
 .inicio{
     display: flex;
     justify-content: space-around;
@@ -13,38 +15,71 @@
 }
 
 .facilRank{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 37px;
     background: #00131aa2;
 }
 
 .medioRank{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 37px;
     background: #00131aa2;
 }
 
 .dificilRank{
     margin-top: 10px;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 37px;
     background: #00131aa2;
 }
 
 .impossivelRank{
     margin-top: 10px;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 37px;
     background: #00131aa2;
 }
 
 /* Estilo do Facil */
 .login{
-    background: red;
-    width: 10%;
-    height: 10%;
+    background: #00131aa2;
+    border-radius: 37px;
+    width: 40%;
+    height: 510px;
+    margin: 0 auto;
+    margin-top: 10px;
 }
+
+.login p{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.login button{
+    border-radius: 37px;
+    width: 20%;
+    padding: 5px;
+    color: #FFF;
+    background: none;
+    border: 2px greenyellow solid;
+    margin-top: 10px;
+}
+
+.login button:hover{
+    box-shadow: 0px 2px 10px rgb(187, 216, 20);
+}
+
+.formulario{
+    margin-top: 50px;
+}
+
+.formulario input{
+    border-radius: 37px;
+    border: none;
+    padding: 5px;
+}
+
