@@ -80,7 +80,7 @@ const QuizFacil = ( props ) =>
         if( resposta_correta == i )
         {
             alteraPontos( pontos + 3);
-            require('./Acerto.css')
+            
         } else{
             
         }
