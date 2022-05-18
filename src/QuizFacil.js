@@ -1,3 +1,4 @@
+import { getElementError } from "@testing-library/react";
 import React, {useState} from "react";
 import Final from "./Final";
 
@@ -65,19 +66,38 @@ const QuizFacil = ( props ) =>
         },
     ];
 
-    const verificaResposta = (i) => 
-    {   
+    const bloqueiaTela = (i) =>{
+        const elemento = document.getElementById(i);
+        elemento.classList.add('resposta')
+        console.log("1")
+        verificaResposta(i, elemento)
+
+    }
+
+    const verificaResposta = (i, elemento) => 
+    {  
         const resposta_correta = perguntas[etapa].correta;
         if( resposta_correta == i )
         {
             alteraPontos( pontos + 3);
-        }
-        
-        if( etapa + 1 < perguntas.length ){
-            alteraEtapa( etapa + 1);
+            require('./Acerto.css')
         } else{
-            alteraTela( <Final pontos={pontos} alteraTela={alteraTela}/>)
+            
         }
+
+        setTimeout(() => {
+            elemento.classList.remove('resposta')
+            console.log(i)
+            
+            if( etapa + 1 < perguntas.length ){
+                
+                alteraEtapa( etapa + 1);
+                
+            }
+            else{
+                alteraTela( <Final alteraTela={alteraTela}/>)
+            }
+        }, 2000);
     }
 
     return ( 
@@ -95,7 +115,7 @@ const QuizFacil = ( props ) =>
                     <font>
                         {
                             perguntas[ etapa ].respostas.map( ( r, i )  => {
-                                return <div id={etapa} className={"resposta"} onClick={ () => verificaResposta(i) }> { r } </div>
+                                return <div id={i} onClick={() => bloqueiaTela(i)}> { r } </div>
                             })   
                         }
                     </font>

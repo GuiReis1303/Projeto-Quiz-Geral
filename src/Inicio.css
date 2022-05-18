@@ -1,4 +1,7 @@
-
+body{
+    background-image: url("https://i.imgur.com/OilnjfN.jpeg");
+    background-size: 82%;
+}
 
 .inicio{
     display: flex;

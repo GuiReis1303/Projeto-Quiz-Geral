@@ -29,3 +29,7 @@
 .resposta:hover{
     border: 2px greenyellow solid;
 }
+
+.resposta{
+    pointer-events: none;
+}
