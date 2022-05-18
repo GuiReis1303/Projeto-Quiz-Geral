@@ -9,23 +9,22 @@ const Nivel = (props) =>{
     return(
         <div className='backgroundN'>
             <div>   
-                <p className='avisoN'>Se você clicar um qualquer lugar desse quadrado irá iniciar o quiz no <b>Nível Impossível</b>. Caso esteja preparado só clique e prepara-se!</p>
+                <p className='avisoN'>Selecione seu <b>Nível</b> e divirta-se!</p>
                   </div>
 
             <div className='nivel'>
                 <div className='facilN' onClick={() => alteraTela(<QuizFacil alteraTela={alteraTela}/>)}>
                     <div>
                         <h2>Fácil</h2>
-                        <font> <p>Você está preparado?</p>
+                        <font> <p className='textoAbaixoNivel'>Você está preparado?</p>
                         <p>Você enfrentará <br/>perguntas do tipo:</p>
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li>entre outras...</li>
+                            <li>Qual é esse jogador...</li>
+                            <li>Qual a nacionalidade...</li>
+                            <br/>
+                            
                         </ul>
+                        <p>entre outras...</p>
                         </font>
                     </div>
                 </div>
@@ -34,16 +33,15 @@ const Nivel = (props) =>{
                     <div>   
                         <h2>Médio</h2>
                     <font>
-                        <p>Você está preparado?</p>
+                        <p className='textoAbaixoNivel'>Você está preparado?</p>
                         <p>Você enfrentará <br/>perguntas do tipo:</p>
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li>entre outras...</li>
+                            <li>Qual é esse jogador...</li>
+                            <li>Qual a nacionalidade...</li>
+                            <br/>
+                            
                         </ul>
+                        <p>entre outras...</p>
                     </font> 
                     </div>
                 </div>
@@ -52,16 +50,15 @@ const Nivel = (props) =>{
                     <div>  
                         <h2>Difícil</h2>
                     <font>
-                        <p>Você está preparado?</p>
+                        <p className='textoAbaixoNivel'>Você está preparado?</p>
                         <p>Você enfrentará <br/>perguntas do tipo:</p>
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li>entre outras...</li>
+                            <li>Qual é esse jogador...</li>
+                            <li>Qual a nacionalidade...</li>
+                            <br/>
+                            
                         </ul>
+                        <p>entre outras...</p>
                      </font>  
                     </div>
                 </div>
@@ -70,16 +67,15 @@ const Nivel = (props) =>{
                     <div>
                         <h2>Impossível</h2>
                      <font>
-                        <p>Você está preparado?</p>
+                        <p className='textoAbaixoNivel'>Você está preparado?</p>
                         <p>Você enfrentará <br/>perguntas do tipo:</p>
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li>entre outras...</li>
+                            <li>Qual é esse jogador...</li>
+                            <li>Qual a nacionalidade...</li>
+                            <br/>
+                            
                         </ul>
+                        <p>entre outras...</p>
                       </font> 
                     </div>
                 </div>
