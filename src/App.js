@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Inicio from './Inicio';
 import Nivel from './Nivel';
 
 function App() {
@@ -7,7 +8,7 @@ function App() {
     const [tela, alteraTela] = useState(null)
 
     if(tela == null){
-        alteraTela(<Nivel alteraTela={alteraTela}/>);
+        alteraTela(<Inicio alteraTela={alteraTela}/>);
     }
 
     return (

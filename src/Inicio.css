@@ -1,0 +1,50 @@
+.inicio{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Estilo do Rank */
+.rank{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.facilRank{
+    width: 300px;
+    height: 300px;
+    border-radius: 37px;
+    background: #00131aa2;
+}
+
+.medioRank{
+    width: 300px;
+    height: 300px;
+    border-radius: 37px;
+    background: #00131aa2;
+}
+
+.dificilRank{
+    margin-top: 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 37px;
+    background: #00131aa2;
+}
+
+.impossivelRank{
+    margin-top: 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 37px;
+    background: #00131aa2;
+}
+
+/* Estilo do Facil */
+.login{
+    background: red;
+    width: 10%;
+    height: 10%;
+}
