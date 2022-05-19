@@ -42,16 +42,20 @@
     padding-bottom: 7px;
     border: 0.1vw #FFF double;
     border-radius: 30px;
-    width: 15vw;
+    width: 20vw;
     margin-bottom: 13px;
     font-size: 1.3vw ;
-    background-image: linear-gradient(100deg, #1a1919f1, #530012f1);
-}
-
-.resposta:hover{
-    border: 2px greenyellow solid;
+    /*background-image: linear-gradient(100deg, #1a1919f1, #530012f1);*/
 }
 
 .resposta{
     pointer-events: none;
+}
+
+.certo{
+    background-image: linear-gradient(100deg, #1a1919f1, #3aa509f1);
+}
+
+.errado{
+    background-image: linear-gradient(100deg, #1a1919f1, #da0f0ff1);
 }
