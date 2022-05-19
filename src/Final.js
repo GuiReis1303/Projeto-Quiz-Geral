@@ -23,7 +23,7 @@ const Final = (props) => {
           </div>
                 <div className='formulario'>
                    
-                    <button onClick={() => alteraTela(<Inicio alteraTela={alteraTela}/>)}>Voltar</button>
+                    <button onClick={location.reload()}>Voltar</button>
                 </div>
             </div>
 
