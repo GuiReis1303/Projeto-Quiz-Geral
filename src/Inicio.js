@@ -17,7 +17,7 @@ const Inicio = (props) => {
                 </p>
                 <div className='formulario'>
                     <p>Digite seu Nome:</p><input/><br/>
-                    <button onClick={() => alteraTela(<Nivel alteraTela={alteraTela}/>)}>Enviar</button>
+                    <button onClick={() => alteraTela(<Nivel alteraTela={alteraTela}/>)}>Jogar</button>
                 </div>
             </div>
 

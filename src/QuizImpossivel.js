@@ -66,7 +66,7 @@ const QuizImpossivel = ( props ) =>
     ];
 
     const bloqueiaTela = (i) =>{
-        const elemento = document.getElementById(i);
+        const elemento = document.getElementById('bloqueio');
         elemento.classList.add('resposta')
         verificaResposta(i, elemento)
 
@@ -105,7 +105,7 @@ const QuizImpossivel = ( props ) =>
                 <img src={require("./Impossivel/"+etapa+".png")}/>
             </div>
 
-            <div>
+            <div className='bloqueio'>
                 <div>
                     <h1> { perguntas[ etapa ].pergunta } </h1>
                 </div>
