@@ -6,23 +6,7 @@ const Inicio = (props) => {
     require('./Inicio.css')
     return( 
         <div className='inicio'>
-            <div className='rank'>
-                <div className='facilRank'>
-                    Fácil
-                </div>
-
-                <div className='medioRank'>
-                    Médio
-                </div>
-
-                <div className='dificilRank'>
-                    Difícil
-                </div>
-
-                <div className='impossivelRank'>
-                    Impossível
-                </div>
-            </div>
+            
 
             <div className='login'>
                 <h2>Bem-vindo ao Quiz sobre Futebol</h2>
