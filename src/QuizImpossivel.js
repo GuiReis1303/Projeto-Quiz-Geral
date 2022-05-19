@@ -46,12 +46,12 @@ const QuizImpossivel = ( props ) =>
         },
         {
             pergunta: "Quais seleções estão empatadas com 3 vices em copa do mundo?",
-            respostas: ["Argentina, Holanda e Alemanha", "Holanda, Brasil e Itália", "Holanda, Alemanha e Itália", "Holanda, Alemnha e Argentina"],
+            respostas: ["Argentina, Holanda e Alemanha", "Holanda, Brasil e Itália", "Holanda, Alemanha e Itália", "Holanda, Alemanha e Argentina"],
             correta: 0
         },
         {
             pergunta: "Em qual time europeu o Zico brasileiro jogou?",
-            respostas: ["Fiorentina", "Roma", "Uninese", "Barcelona"],
+            respostas: ["Fiorentina", "Roma", "Udinese", "Barcelona"],
             correta: 2
         },
         {
@@ -79,7 +79,7 @@ const QuizImpossivel = ( props ) =>
         const certa = resposta_correta == i;
         if( resposta_correta == i )
         {
-            alteraPontos( pontos + 3);
+            alteraPontos( pontos + 1);
             document.getElementById(i).classList.add('certo')
         } else{
             document.getElementById(i).classList.add('errado')
