@@ -36,8 +36,8 @@ const Nivel = (props) =>{
                         <p className='textoAbaixoNivel'>Você está preparado?</p>
                         <p>Você enfrentará <br/>perguntas do tipo:</p>
                         <ul>
-                            <li>Qual é esse jogador...</li>
-                            <li>Qual a nacionalidade...</li>
+                            <li>Campeões Nacionais...</li>
+                            <li>Campeões Europeus...</li>
                             <br/>
                             
                         </ul>
@@ -53,8 +53,8 @@ const Nivel = (props) =>{
                         <p className='textoAbaixoNivel'>Você está preparado?</p>
                         <p>Você enfrentará <br/>perguntas do tipo:</p>
                         <ul>
-                            <li>Qual é esse jogador...</li>
-                            <li>Qual a nacionalidade...</li>
+                            <li>Bola de Ouro...</li>
+                            <li>Copa do Mundo...</li>
                             <br/>
                             
                         </ul>
@@ -70,8 +70,8 @@ const Nivel = (props) =>{
                         <p className='textoAbaixoNivel'>Você está preparado?</p>
                         <p>Você enfrentará <br/>perguntas do tipo:</p>
                         <ul>
-                            <li>Qual é esse jogador...</li>
-                            <li>Qual a nacionalidade...</li>
+                            <li>BOA SORTE...</li>
+                            <li>BOA SORTE...</li>
                             <br/>
                             
                         </ul>
