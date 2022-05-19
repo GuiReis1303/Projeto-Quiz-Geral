@@ -43,6 +43,7 @@ body{
     margin-top: 1vw;
     font-size: 2vw;
     cursor: pointer;
+    box-shadow: 2px 2px 25px #00223dc7 inset;
 }
 
 .login button:hover{

@@ -10,12 +10,13 @@ body{
 
 /* Estilo do Facil */
 .login{
-    background: #00131aa2;
+    background: #013244f1;
     border-radius: 4vw;
     width: 40%;
     height: 27.2vw;
     margin: 0 auto;
     margin-top: 8vw; 
+    box-shadow: 5px 10px 25px #00223d inset;
     
 }
 
@@ -41,6 +42,7 @@ body{
     margin-top: 0.1vw;
     font-size: 2vw;
     cursor: pointer;
+    box-shadow: 2px 2px 25px #00223dc7 inset;
 }
 
 .login button:hover{
@@ -49,6 +51,7 @@ body{
      transition: 0.15s;
      color: #ffffff; 
      transition: 0.25s; 
+     box-shadow: 1px 1px 25px #00223dc7 inset;
 }
 
 .red{
