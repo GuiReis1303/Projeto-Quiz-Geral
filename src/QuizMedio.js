@@ -66,24 +66,38 @@ const QuizMedio = ( props ) =>
         },
     ];
 
-    const verificaResposta = (i) => 
-    {
+    const bloqueiaTela = (i) =>{
+        const elemento = document.getElementById(i);
+        elemento.classList.add('resposta')
+        verificaResposta(i, elemento)
+
+    }
+
+    const verificaResposta = (i, elemento) => 
+    {  
         const resposta_correta = perguntas[etapa].correta;
         if( resposta_correta == i )
         {
-            alteraPontos( pontos + 5);
+            alteraPontos( pontos + 3);
+            document.getElementById(i).classList.add('certo')
+        } else{
+            document.getElementById(i).classList.add('errado')
         }
 
-
-        if( etapa + 1 < perguntas.length )
-        {
-            alteraEtapa( etapa + 1);
-        }
-        else
-        {
-            alteraTela( <Final pontos={pontos} alteraTela={alteraTela}/>)
-        }
-
+        setTimeout(() => {
+            elemento.classList.remove('resposta');
+            document.getElementById(i).classList.remove('certo');
+            document.getElementById(i).classList.remove('errado');
+            
+            if( etapa + 1 < perguntas.length ){
+                
+                alteraEtapa( etapa + 1);
+                
+            }
+            else{
+                alteraTela( <Final alteraTela={alteraTela}/>)
+            }
+        }, 2000);
     }
 
     return ( 
@@ -101,7 +115,7 @@ const QuizMedio = ( props ) =>
                     <font>
                         {
                             perguntas[ etapa ].respostas.map( ( r, i )  => {
-                                return <div className="resposta" onClick={ () => verificaResposta(i) }> { r } </div>
+                                return <div id={i} onClick={() => bloqueiaTela(i)}> { r } </div>
                             })   
                         }
                     </font>

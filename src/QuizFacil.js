@@ -69,7 +69,6 @@ const QuizFacil = ( props ) =>
     const bloqueiaTela = (i) =>{
         const elemento = document.getElementById(i);
         elemento.classList.add('resposta')
-        console.log("1")
         verificaResposta(i, elemento)
 
     }
@@ -80,14 +79,15 @@ const QuizFacil = ( props ) =>
         if( resposta_correta == i )
         {
             alteraPontos( pontos + 3);
-            
+            document.getElementById(i).classList.add('certo')
         } else{
-            
+            document.getElementById(i).classList.add('errado')
         }
 
         setTimeout(() => {
-            elemento.classList.remove('resposta')
-            console.log(i)
+            elemento.classList.remove('resposta');
+            document.getElementById(i).classList.remove('certo');
+            document.getElementById(i).classList.remove('errado');
             
             if( etapa + 1 < perguntas.length ){
                 
