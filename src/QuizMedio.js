@@ -6,6 +6,7 @@ const QuizMedio = ( props ) =>
     require('./Quiz.css');
 
     const alteraTela = props.alteraTela
+    const sorteados2 = props.sorteados2;
 
     const [ etapa, alteraEtapa ] = useState ( 0 );
 
@@ -75,7 +76,7 @@ const QuizMedio = ( props ) =>
 
     const verificaResposta = (i, elemento) => 
     {  
-        const resposta_correta = perguntas[etapa].correta;
+        const resposta_correta = perguntas[sorteados2[etapa]].correta;
         if( resposta_correta == i )
         {
             alteraPontos( pontos + 3);
@@ -103,18 +104,18 @@ const QuizMedio = ( props ) =>
     return ( 
         <div className="quiz">
             <div>
-                <img src={require("./Medio/"+etapa+".png")}/>
+                <img src={require("./Medio/"+sorteados2[etapa]+".png")}/>
             </div>
 
             <div id='bloqueio'>
                 <div>
-                    <h1> { perguntas[ etapa ].pergunta } </h1>
+                    <h1> { perguntas[ sorteados2[etapa] ].pergunta } </h1>
                 </div>
 
                 <div className="quizresposta">
                     <font>
                         {
-                            perguntas[ etapa ].respostas.map( ( r, i )  => {
+                            perguntas[ sorteados2[etapa] ].respostas.map( ( r, i )  => {
                                 return <div id={i} onClick={() => bloqueiaTela(i)}> { r } </div>
                             })   
                         }
