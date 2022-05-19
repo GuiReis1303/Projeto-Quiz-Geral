@@ -106,7 +106,7 @@ const QuizMedio = ( props ) =>
                 <img src={require("./Medio/"+etapa+".png")}/>
             </div>
 
-            <div className='bloqueio'>
+            <div id='bloqueio'>
                 <div>
                     <h1> { perguntas[ etapa ].pergunta } </h1>
                 </div>

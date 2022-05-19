@@ -105,7 +105,7 @@ const QuizImpossivel = ( props ) =>
                 <img src={require("./Impossivel/"+etapa+".png")}/>
             </div>
 
-            <div className='bloqueio'>
+            <div id='bloqueio'>
                 <div>
                     <h1> { perguntas[ etapa ].pergunta } </h1>
                 </div>
