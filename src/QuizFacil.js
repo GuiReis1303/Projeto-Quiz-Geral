@@ -15,7 +15,7 @@ const QuizFacil = ( props ) =>
     [
         {
             pergunta: "O brasil é quantas vezes campeão mundial?",
-            respostas: ["Hexa", "Tri", "Treta", "Penta"],
+            respostas: ["Hexa", "Tri", "Tetra", "Penta"],
             correta: 3
         },
         {
