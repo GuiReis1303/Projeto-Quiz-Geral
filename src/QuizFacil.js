@@ -76,6 +76,7 @@ const QuizFacil = ( props ) =>
     const verificaResposta = (i, elemento) => 
     {  
         const resposta_correta = perguntas[sorteados1[etapa]].correta;
+        const certa = resposta_correta == i;
         if( resposta_correta == i )
         {
             alteraPontos( pontos + 1);
@@ -98,7 +99,7 @@ const QuizFacil = ( props ) =>
                 
             }
             else{
-                alteraTela( <Final pontos={pontos} alteraTela={alteraTela}/>)
+                alteraTela( <Final pontos={pontos} alteraTela={alteraTela} certa={certa}/>)
             }
         }, 1000);
     }

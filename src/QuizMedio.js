@@ -77,9 +77,10 @@ const QuizMedio = ( props ) =>
     const verificaResposta = (i, elemento) => 
     {  
         const resposta_correta = perguntas[sorteados2[etapa]].correta;
+        const certa = resposta_correta == i;
         if( resposta_correta == i )
         {
-            alteraPontos( pontos + 3);
+            alteraPontos( pontos + 1);
             document.getElementById(i).classList.add('certo')
         } else{
             document.getElementById(i).classList.add('errado')
@@ -96,7 +97,7 @@ const QuizMedio = ( props ) =>
                 
             }
             else{
-                alteraTela( <Final pontos={pontos} alteraTela={alteraTela}/>)
+                alteraTela( <Final pontos={pontos} alteraTela={alteraTela} certa={certa}/>)
             }
         }, 1000);
     }

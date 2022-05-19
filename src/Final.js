@@ -3,7 +3,8 @@ import Inicio from './Inicio';
 const Final = (props) => {
 
     const alteraTela = props.alteraTela;
-    const pontos = props.pontos;
+    const pontos = props.pontos + (certa ? 1 : 0);
+    const certa = props.certa;
 
     let cor = 'red'
     if(pontos > 4 && pontos <= 8){
