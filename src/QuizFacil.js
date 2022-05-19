@@ -11,7 +11,6 @@ const QuizFacil = ( props ) =>
     const [ etapa, alteraEtapa ] = useState ( 0 );
 
     const [ pontos, alteraPontos ] = useState ( 0 );
-
     const perguntas = 
     [
         {
@@ -67,7 +66,7 @@ const QuizFacil = ( props ) =>
     ];
 
     const bloqueiaTela = (i) =>{
-        const elemento = document.getElementById(i);
+        const elemento = document.getElementById('teste');
         elemento.classList.add('resposta')
         verificaResposta(i, elemento)
 
@@ -78,8 +77,11 @@ const QuizFacil = ( props ) =>
         const resposta_correta = perguntas[etapa].correta;
         if( resposta_correta == i )
         {
-            alteraPontos( pontos + 3);
+            alteraPontos( pontos + 1);
             document.getElementById(i).classList.add('certo')
+            console.log(pontos)
+            console.log('1')
+            
         } else{
             document.getElementById(i).classList.add('errado')
         }
@@ -95,9 +97,9 @@ const QuizFacil = ( props ) =>
                 
             }
             else{
-                alteraTela( <Final alteraTela={alteraTela}/>)
+                alteraTela( <Final pontos={pontos} alteraTela={alteraTela}/>)
             }
-        }, 2000);
+        }, 1000);
     }
 
     return ( 
@@ -106,7 +108,7 @@ const QuizFacil = ( props ) =>
                 <img src={require("./Facil/"+etapa+".png")}/>
             </div>
 
-            <div>
+            <div id="teste">
                 <div>
                     <h1> { perguntas[ etapa ].pergunta } </h1>
                 </div>

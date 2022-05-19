@@ -3,15 +3,23 @@ import Inicio from './Inicio';
 const Final = (props) => {
 
     const alteraTela = props.alteraTela;
+    //const pontos = props.pontos;
+    const pontos = 2;
+
+    let cor = 'red'
+    if(pontos > 4 && pontos <= 8){
+        cor = 'amarelo'
+    } else if(pontos > 8 && pontos <= 10){
+        cor = 'verde'
+    }
+
     require('./Final.css')
-    return( 
+    return(
         <div className='inicio'>
             <div className='login'>
                 <h2>Obrigado por jogar!</h2>
-            <div> <p>
-                    :)
-              
-                </p>
+            <div>
+                <p className={cor} id='pt'>{pontos} / 10</p>
           </div>
                 <div className='formulario'>
                    

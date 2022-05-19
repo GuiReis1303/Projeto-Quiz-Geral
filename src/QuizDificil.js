@@ -96,7 +96,7 @@ const QuizDificil = ( props ) =>
             else{
                 alteraTela( <Final alteraTela={alteraTela}/>)
             }
-        }, 2000);
+        }, 1000);
     }
 
     return ( 

@@ -1,13 +1,12 @@
+body{
+    background-image: url("https://i.imgur.com/HtiW3wJ.jpg");
+    background-size: 100%;
+}
 
 .inicio{
     display: flex;
     justify-content: space-around;
 }
-
-
-
-
-
 
 /* Estilo do Facil */
 .login{
@@ -52,7 +51,17 @@
      transition: 0.25s; 
 }
 
+.red{
+    color: #da0f0ff1;
+}
 
+.amarelo{
+    color: #dfdb0df1;
+}
+
+.verde{
+    color: #3aa509f1;
+}
 
 
 
