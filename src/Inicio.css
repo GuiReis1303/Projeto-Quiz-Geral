@@ -9,51 +9,9 @@ body{
     justify-content: space-around;
 }
 
-/* Estilo do Rank */
-.rank{
-    margin-top: 4vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 50%;
-}
-
-.facilRank{
-  
-    width: 18vw;
-    height: 18vw;
-    border-radius: 37px;
-    background: #00131aa2;
-   
-    
-}
-.medioRank{
-    
-    width: 18vw;
-    height: 18vw;
-    border-radius: 37px;
-    background: #00131aa2;
-}
-
-.dificilRank{
-    margin-top: 1vw; 
-    width: 18vw;
-    height: 18vw;
-    border-radius: 37px;
-    background: #00131aa2;
-}
-
-.impossivelRank{
-    margin-top: 1vw; 
-    width: 18vw;
-    height: 18vw;
-    border-radius: 37px;
-    background: #00131aa2;
-}
-
 /* Estilo do Facil */
 .login{
-    background: #00131aa2;
+    background: #002735e7;
     border-radius: 37px;
     width: 40%;
     height: 37.2vw;
@@ -67,6 +25,7 @@ body{
     margin: 0 auto;
     font-size: 1.3vw;
    padding-bottom: 0.5vw;
+  
 }
 .login h2{
     padding-top: 0.1vw;
