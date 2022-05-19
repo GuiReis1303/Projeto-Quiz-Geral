@@ -7,15 +7,15 @@ const Final = (props) => {
     return( 
         <div className='inicio'>
             <div className='login'>
-                <h2>Bem-vindo ao Quiz sobre Futebol</h2>
-                <p>
-                    Você está preparado para testar os seus conhecimentos sobre Futebol em 4 níveis diferentes? 
-                    Se sim, coloque seu nome abaixo para conseguir aparecer no rank dependendo de sua pontuação
-                    e clique em começar para escolher um nível. Boa sorte!
+                <h2>Obrigado por jogar!</h2>
+            <div> <p>
+                    :)
+              
                 </p>
+          </div>
                 <div className='formulario'>
-                    <p>Digite seu Nome:</p><input/><br/>
-                    <button onClick={() => alteraTela(<Inicio alteraTela={alteraTela}/>)}>Enviar</button>
+                   
+                    <button onClick={() => alteraTela(<Inicio alteraTela={alteraTela}/>)}>Voltar</button>
                 </div>
             </div>
 
