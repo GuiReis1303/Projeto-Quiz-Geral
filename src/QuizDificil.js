@@ -79,7 +79,7 @@ const QuizDificil = ( props ) =>
         const certa = resposta_correta == i;
         if( resposta_correta == i )
         {
-            alteraPontos( pontos + 3);
+            alteraPontos( pontos + 1);
             document.getElementById(i).classList.add('certo')
         } else{
             document.getElementById(i).classList.add('errado')

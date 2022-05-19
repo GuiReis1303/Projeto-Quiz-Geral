@@ -1,7 +1,6 @@
 import Inicio from './Inicio';
 
 const Final = (props) => {
-
     const alteraTela = props.alteraTela;
     const certa = props.certa;
     const pontos = props.pontos + (certa ? 1 : 0);
@@ -13,6 +12,10 @@ const Final = (props) => {
         cor = 'verde'
     }
 
+    setTimeout(() => {
+        window.location.reload(true);
+    }, 5000);
+
     require('./Final.css')
     return(
         <div className='inicio'>
@@ -21,14 +24,6 @@ const Final = (props) => {
             <div>
                 <p className={cor} id='pt'>{pontos} / 10</p>
           </div>
-                <div className='formulario'>
-                   
-                    <button onClick="window.location.reload()">Voltar</button>
-                </div>
-            </div>
-
-            <div className='registrar'>
-
             </div>
         </div>
      );
