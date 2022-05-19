@@ -8,19 +8,19 @@ const Inicio = (props) => {
         <div className='inicio'>
             <div className='rank'>
                 <div className='facilRank'>
-                    a
+                    Fácil
                 </div>
 
                 <div className='medioRank'>
-                    a
+                    Médio
                 </div>
 
                 <div className='dificilRank'>
-                    a
+                    Difícil
                 </div>
 
                 <div className='impossivelRank'>
-                    a
+                    Impossível
                 </div>
             </div>
 
@@ -32,7 +32,7 @@ const Inicio = (props) => {
                     e clique em começar para escolher um nível. Boa sorte!
                 </p>
                 <div className='formulario'>
-                    <p>Digite seu Nome</p><input/><br/>
+                    <p>Digite seu Nome:</p><input/><br/>
                     <button onClick={() => alteraTela(<Nivel alteraTela={alteraTela}/>)}>Enviar</button>
                 </div>
             </div>
