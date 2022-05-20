@@ -1,3 +1,4 @@
+import React from 'react';
 import Nivel from './Nivel';
 
 const Inicio = (props) => {

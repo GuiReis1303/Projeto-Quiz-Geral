@@ -1,3 +1,4 @@
+import React from 'react';
 import QuizFacil from './QuizFacil';
 import QuizMedio from './QuizMedio';
 import QuizDificil from './QuizDificil';

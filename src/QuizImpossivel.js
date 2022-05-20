@@ -46,7 +46,7 @@ const QuizImpossivel = ( props ) =>
         },
         {
             pergunta: "Quais seleções estão empatadas com 3 vices em copa do mundo?",
-            respostas: ["Argentina, Holanda e Alemanha", "Holanda, Brasil e Itália", "Holanda, Alemanha e Itália", "Holanda, Alemanha e Argentina"],
+            respostas: ["Argentina, Holanda e Alemanha", "Holanda, Brasil e Itália", "Holanda, Alemanha e Itália", "Holanda, Inglaterra e Argentina"],
             correta: 0
         },
         {

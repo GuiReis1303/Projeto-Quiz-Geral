@@ -1,4 +1,6 @@
+import React from 'react';
 import Inicio from './Inicio';
+
 
 const Final = (props) => {
     const alteraTela = props.alteraTela;

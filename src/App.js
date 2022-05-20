@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import react, { useState } from 'react';
 import Final from './Final';
 import Inicio from './Inicio';
 import Nivel from './Nivel';

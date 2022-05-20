@@ -14,13 +14,14 @@ body{
     background: #002735e7;
     border-radius: 37px;
     width: 40%;
-    height: 37.2vw;
+    height: auto;
     margin: 0 auto;
-    margin-top: 4vw; 
+    margin-top: 4vw;
+    font-size: 15px !important; 
     
 }
 
-.login p{
+/*.login p{
     width: 80%;
     margin: 0 auto;
     font-size: 1.3vw;
@@ -31,7 +32,7 @@ body{
     padding-top: 0.1vw;
     font-size: 3vw;
 
-}
+}*/
 
 .login button{
     border-radius: 37px;
